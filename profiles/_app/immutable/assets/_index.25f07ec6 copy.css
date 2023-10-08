@@ -1,0 +1,422 @@
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+@import url('https://fonts.cdnfonts.com/css/poppins');
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    user-select: none;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal
+}
+
+body {
+    margin: 0;
+    line-height: inherit
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+samp,
+pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-size: 1em
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+    margin: 0
+}
+
+:root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: .5rem
+}
+
+* {
+    border-color: hsl(var(--border))
+}
+
+body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1
+}
+
+.central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: .5rem
+}
+
+.text-6xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-xl {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #cccccc;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-x2 {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #cccccc;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-list {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #cccccc;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.three-column-list {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #cccccc;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.hidden-link {
+    display: none;
+}
+
+.link-hover {
+    transition: all .25s ease-in-out;
+}
+
+.link-hover:hover {
+    color: rgb(168, 249, 186);
+    /* transform: scale(1.1); */
+    transition: all .25s ease-in-out
+}
+
+.text-list-2 {
+    /* position: fixed; */
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #cccccc;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: opacity .8s ease;
+    transition: all .25s ease-in-out;
+    display: flex;
+    z-index: 2;
+}
+
+.text-list-2:hover {
+    transition: all .25s ease-in-out;
+    color: rgb(168, 249, 186);
+    /* color: rgb(249, 168, 212); */
+}
+
+.three-column-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    margin-top: 0px;
+    opacity: 0;
+    transition: opacity .8s ease;
+    z-index: 1;
+}
+
+.show-list .text-list-2 {
+    display: none;
+}
+
+.show-list .three-column-list {
+    opacity: 1;
+}
+
+.three-column-list li {
+    flex: 0 0 calc(33.33% - 0px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* replace 3 column list */
+
+/* .member-listing{
+	list-style: none;
+	justify-content: space-between;
+    padding: 0;
+	align-items: center;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.member-listing li {
+    display: inline-block;
+    width: 25%;
+} */
+
+.url-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    margin-top: -9px;
+    margin-bottom: -9px;
+}
+
+.url-listing li {
+    flex: 1;
+    text-align: center;
+    padding: 7px;
+    transition: all .25s ease-in-out;
+}
+
+/* Style the links on hover */
+
+.url-listing li:hover {
+    color: rgb(168, 249, 186);
+    transition: all .25s ease-in-out;
+}
+
+main.main-class.main-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw
+}
+
+main.main-class .bg.main-class {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* bg filter */
+
+main.main-class .bg .filter.main-class {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.2) */
+}
+
+main.main-class .bg .card-wrapper.main-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+main.main-class .bg .card-wrapper .card.main-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8px;
+    color: rgba(204, 204, 204, 0.25);
+    line-height: 1.5;
+}
+
+.line-shadow {
+    margin-top: -9px;
+    margin-bottom: -4px;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.5));
+}
+
+.line-divider {
+    height: 10px;
+    filter: invert(90%) sepia(6%) saturate(1601%) hue-rotate(161deg) brightness(91%) contrast(97%);
+}
+
+.image-class {
+    filter: invert(87%) sepia(1%) saturate(42%) hue-rotate(314deg) brightness(91%) contrast(104%);
+}
+
+.gradient-divider {
+    width: 251px;
+    height: 2px;
+    background: rgb(168, 249, 186);
+    border-radius: 20px;
+    margin: 0.25rem;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gradient-divider-1 {
+    background: linear-gradient(to right, #5D9CEC, #F06292);
+}
+
+.gradient-divider-2 {
+    background: linear-gradient(to right, #3B8686, #97AABD);
+}
+
+.gradient-divider-3 {
+    background: linear-gradient(to right, #D9BF77, #F06B6B);
+}
+
+.gradient-divider-4 {
+    background: linear-gradient(to right, #43C6AC, #F8FFAE);
+}
+
+.gradient-divider-5 {
+    background: linear-gradient(to right, #634370, #8A4D76);
+}
+
+.text-6xl {
+    opacity: 0;
+    animation: fadeIn 1s 0.4s ease forwards;
+}
+
+.text-xl {
+    opacity: 0;
+    animation: fadeIn 1s 0.8s ease forwards;
+}
+
+.text-x2 {
+    opacity: 0;
+    animation: fadeIn 1s 1.2s ease forwards;
+}
+
+.line-divider {
+    opacity: 0;
+    animation: fadeIn 1s 1.2s ease forwards;
+}
+
+.gradient-divider {
+    opacity: 0;
+    animation: fadeIn 1s 1.2s ease forwards;
+}
+
+.text-list-2 {
+    opacity: 0;
+    animation: fadeIn 1s 1.6s ease forwards;
+}
+
+.text-list {
+    opacity: 0;
+    animation: fadeIn 1s 1.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
